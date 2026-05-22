@@ -5,10 +5,10 @@ class ValidaFormulario {
     }
     eventos() {
         this.formulario.addEventListener('submit', (e) => {
-            this.hadleSubmit(e);
+            this.handleSubmit(e);
         });
     }
-    hadleSubmit(e) {
+    handleSubmit(e) {
         e.preventDefault();
         const camposValidos = this.isValid();
         const senhasValidas = this.passwordIsValid();
@@ -55,9 +55,9 @@ class ValidaFormulario {
             this.createError(confirmPassword, 'Campos Senha e comfirmação senha precisam ser iguais');
         }
         if (password.value.length < 3 || password.value.length > 12) {
-            this.createError(password, 'Senha precisa estar entre 6 e 12 caracteres.');
+            this.createError(password, 'Senha precisa estar entre 3 e 12 caracteres.');
+            valid = false;
         }
-
         return valid;
     }
     //-MÉTODO VALIDA USUARIO-

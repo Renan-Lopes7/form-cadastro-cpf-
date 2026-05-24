@@ -23,7 +23,7 @@ https://renan-lopes7.github.io/form-cadastro-cpf-/
 
 - HTML
 - CSS
-- JavaScript (Vanilla)
+- JavaScript
 
 ## Como usar
 
